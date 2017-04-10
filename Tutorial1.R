@@ -20,4 +20,3 @@ test$Survived <- rep(0, 418)
 # Create submission dataframe and output to file
 submit <- data.frame(PassengerId = test$PassengerId, Survived = test$Survived)
 write.csv(submit, file = "theyallperish.csv", row.names = FALSE)
-
