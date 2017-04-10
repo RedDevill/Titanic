@@ -46,4 +46,3 @@ test$Survived[test$Sex == 'female' & test$Pclass == 3 & test$Fare >= 20] <- 0
 # Create submission dataframe and output to file
 submit <- data.frame(PassengerId = test$PassengerId, Survived = test$Survived)
 write.csv(submit, file = "genderclassmodel.csv", row.names = FALSE)
-
